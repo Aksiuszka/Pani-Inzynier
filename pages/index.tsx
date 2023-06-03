@@ -1,5 +1,11 @@
-import Image from "next/image";
+import { useTheme } from "@material-tailwind/react";
 
 export default function Home() {
-  return <p>ra ra rasputin jdsfkhsdfhds</p>;
+  const theme = useTheme();
+  console.log(theme);
+  return (
+    <div style={{ backgroundColor: `${theme.palette.primary.light}` }}>
+      qwerty
+    </div>
+  );
 }
