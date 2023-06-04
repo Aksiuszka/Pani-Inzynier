@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-hex: #f9f6ff;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -18,4 +18,5 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  background: var(--background-start-hex);
 }
