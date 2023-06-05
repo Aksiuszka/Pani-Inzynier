@@ -29,11 +29,11 @@ const Nav = () => {
           return (
             <Typography
               as="li"
-              variant="small"
-              color="blue-gray"
-              className="p-1 font-normal"
+              variant="medium"
+              color="deep-purple"
+              className="p-5 font-bold"
             >
-              <a href="#" className="flex items-center">
+              <a href={item.route} className="flex items-center">
                 {item.title}
               </a>
             </Typography>
@@ -43,13 +43,18 @@ const Nav = () => {
             <Button
               variant="outlined"
               key={item.id}
-              color={theme.palette.primary.main}
+              color="deep-purple"
+              className="capitalize"
             >
-              {item.title}
+              <Typography className="capitalize font-bold">
+                {item.title}
+              </Typography>
             </Button>
           ) : (
-            <Button variant="filled" key={item.id}>
-              {item.title}
+            <Button variant="filled" key={item.id} color="deep-purple">
+              <Typography className="capitalize font-bold">
+                {item.title}
+              </Typography>
             </Button>
           );
         }
