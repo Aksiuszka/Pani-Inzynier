@@ -1,26 +1,7 @@
 import Logo from "@/shared/assets/svgs/Logo";
 import { Typography } from "@material-tailwind/react";
-
-const LINKS = [
-  {
-    title: "O mnie",
-    items: ["Overview", "Kontakt", "Solutions"],
-  },
-  {
-    title: "Firma",
-    items: ["About us", "Press", "News"],
-  },
-  {
-    title: "Social",
-    items: ["Newsletter", "Events", "Help center"],
-  },
-  {
-    title: "Prawo",
-    items: ["Terms", "Privacy", "Cookies"],
-  },
-];
-
-const currentYear = new Date().getFullYear();
+import { LINKS } from "@/shared/constants";
+import { currentYear } from "@/shared/utils";
 
 const Footer = () => {
   return (
