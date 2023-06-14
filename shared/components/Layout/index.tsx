@@ -5,9 +5,9 @@ import Nav from "../Navbar";
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       <Nav />
-      <div>{children}</div>
+      <div className="children">{children}</div>
       <Footer />
     </div>
   );
